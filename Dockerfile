@@ -11,7 +11,7 @@ FROM rclone/rclone:1.60.0 AS image-linux-armv7
 
 
 # for linux/arm/v6 platform
-FROM alpine:3.15 AS image-linux-armv6
+FROM alpine:3.16.2 AS image-linux-armv6
 
 RUN apk add --no-cache ca-certificates fuse \
   && echo "user_allow_other" >> /etc/fuse.conf \
